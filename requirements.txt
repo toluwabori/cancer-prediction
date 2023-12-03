@@ -1,0 +1,6 @@
+streamlit
+numpy
+Pillow
+keras
+tensorflow
+typing-extensions>=4.7.1
