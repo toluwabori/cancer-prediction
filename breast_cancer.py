@@ -15,7 +15,7 @@ def preprocess_image(img_path):
     return img_array
 
 # Streamlit app
-st.title("Breast Cancer Classification Web App")
+st.title("Breast Cancer Classification Web App. Built by 2146689")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
