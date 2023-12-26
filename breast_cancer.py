@@ -29,7 +29,7 @@ if uploaded_file is not None:
     prediction = model.predict(img_array)
 
     # Output result based on threshold 
-    threshold = 0.5
+    threshold = 0.3
     result = "Malignant" if prediction[0][0] > threshold else "Benign"
     
     st.write(f"This image is likely to be {result}")
