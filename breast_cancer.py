@@ -15,7 +15,7 @@ def preprocess_image(img_path):
     return img_array
 
 # Streamlit app
-st.title("Breast Cancer Classification Web App. Built by 2146689")
+st.title("Breast Cancer Classification Web App")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
@@ -29,7 +29,7 @@ if uploaded_file is not None:
     prediction = model.predict(img_array)
 
     # Output result based on threshold 
-    threshold = 0.3
+    threshold = 0.3  
     result = "Malignant" if prediction[0][0] > threshold else "Benign"
     
     st.write(f"This image is likely to be {result}")
